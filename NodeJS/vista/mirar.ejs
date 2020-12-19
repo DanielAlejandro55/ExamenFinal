@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualisar</title>
+</head>
+<body>
+    <table>
+        <tr>
+          <th>id</th>
+          <th>Empresa</th>
+          <th>Vehiculo</th>
+          <th>Ruta</th>
+        </tr>
+   
+        <% for (var i = 0; i < usuarios.length; i++) { %>
+          <tr>
+            <td><%= usuarios[i].empresa %></td>
+            <td><%= usuarios[i].vehiculo %></td>
+          </tr>    
+        <% } %>
+   </table>
+</body>
+</html>

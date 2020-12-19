@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home || Viajes</title>
+</head>
+<style>
+    body{
+    font-family:Helvetica,Arial,Verdana,sans-serif;
+}
+label{
+    display: inline-block;
+    width: 220px;
+  }
+.bt1{
+    width: 100px;
+    height: 30px;
+    background-color: black;
+    color: blanchedalmond;
+}
+.inputs{
+    width: 250px;
+    height: 25px;
+}
+</style>
+<body>
+        <form method="POST" action="/guardarViaje" id="formulario"> 
+            <label>Ingrese la empresa de viaje:</label>
+            <input type="text" name="empresa" id="empresa" class="inputs">
+            <br>
+            <br>
+            <label>Ingrese el vehiculo:</label>
+            <input type="text" name="vehiculo" id="vehiculo" class="inputs">
+            <br>
+            <br>
+            <label>Seleccione una ruta:</label>
+            <select name="ruta" id="ruta" class="inputs">
+                <option >Bucaramanga - Ocaña</option>
+                <option >Bogota - Aguachica</option>
+                <option >Aguachica - Santa Marta</option>
+                <option >Eje cafetero - Rio Negro</option>
+                <option >Barrancabermeja - Bucaramanga</option>
+            </select>
+            <br>
+            <br>
+            <label>Seleccione la fecha:</label>
+            <input type="date" name="mes" id="mes" class="inputs" class="inputs">
+            <br>
+            <br>
+            <label>Ingrese la hora del viaje:</label>
+            <input type="time" name="hora" id="hora" class="inputs"> 
+            <br>
+            <br>
+            <label>Ingrese la cantidad de cupos:</label>
+            <input type="number" name="viajeros" id="viajeros" class="inputs">
+            <br>
+            <br>
+            <button type="submit" class="bt1">Enviar</button>
+        </form>
+</body>
+</html>
